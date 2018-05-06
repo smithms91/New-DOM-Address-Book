@@ -1,0 +1,100 @@
+/* Generic Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+body {
+  background:  no-repeat center center fixed;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/addressbg.jpg);
+  background-size: cover;
+  font-family: "Maven Pro", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+p {
+  margin-bottom: 1px;
+}
+
+input {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/*Form Container */
+#contact_form {
+  width: 40%;
+  color: #fff;
+  background-color: rgba(179,178,176, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.form_header {
+  margin: 1rem 0 2.5rem 0;
+  font-weight: 500;
+}
+
+/* Submit Button */
+#button {
+  cursor: pointer;
+}
+
+/* Individual Card */
+.contact_container {
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 5px;
+  position: relative;
+  padding: 10px;
+  margin: 0 2rem 2rem 2rem;
+}
+
+/* Delete Button */
+.delete {
+  position: absolute;
+  bottom: -10px;
+  right: -13px;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 50px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* Contact Container */
+#contact_section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 768px) {
+  #contact_form {
+    width: 100%;
+  }
+}
+
