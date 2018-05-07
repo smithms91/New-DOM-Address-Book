@@ -36,7 +36,6 @@ Relation: ${text.value}`;
     div.appendChild(icon);
     contact_section.appendChild(div);
 
-
     //Waiting for icon click to remove div
     icon.addEventListener("click", ( ) => {
       div.remove();
@@ -92,11 +91,5 @@ Relation: ${text.value}`;
     }
   })
 
-  for (let i = 0; i < icon.length; i++) {
-    
-  }
-
-  
-  
   newAddressBook.display();
 }
