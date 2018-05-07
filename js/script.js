@@ -38,12 +38,12 @@ Relation: ${text.value}`;
 
 
     //Waiting for icon click to remove div
-    icon.addEventListener("click", () => {
+    icon.addEventListener("click", ( ) => {
       div.remove();
     })
   }
     deleteAt() {
-      // How Sway
+      
     }
 
   }
@@ -68,6 +68,7 @@ Relation: ${text.value}`;
   let text = document.querySelector("#relation");
   let button = document.querySelector("#button");
   let form = document.querySelector("#contact_form");
+  let icon = document.querySelectorAll(".delete");
   
   //Add button Click/Reset form
   button.addEventListener("click", () => {
@@ -90,5 +91,12 @@ Relation: ${text.value}`;
       text.value = "";
     }
   })
+
+  for (let i = 0; i < icon.length; i++) {
+    
+  }
+
+  
+  
   newAddressBook.display();
 }
